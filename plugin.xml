@@ -22,16 +22,16 @@
     <platform name="ios">
         <!-- feature tag in config.xml -->
         <config-file target="config.xml" parent="/widget">
-          <feature name="Keychain">
-            <param name="ios-package" value="CDVKeychain"/>
+          <feature name="OldKeychain">
+            <param name="ios-package" value="CDVKeychain1"/>
           </feature>
         </config-file>
 
-        <header-file src="src/ios/CDVKeychain.h" />
-        <header-file src="src/ios/SFHFKeychainUtils/SFHFKeychainUtils.h"/>
+        <header-file src="src/ios/CDVKeychain1.h" />
+        <header-file src="src/ios/SFHFKeychainUtils/SFHFKeychainUtils1.h"/>
 
-        <source-file src="src/ios/CDVKeychain.m"/>
-        <source-file src="src/ios/SFHFKeychainUtils/SFHFKeychainUtils.m" compiler-flags="-fobjc-arc" />
+        <source-file src="src/ios/CDVKeychain1.m"/>
+        <source-file src="src/ios/SFHFKeychainUtils/SFHFKeychainUtils1.m" compiler-flags="-fobjc-arc" />
 
         <framework src="Security.framework" />
 
