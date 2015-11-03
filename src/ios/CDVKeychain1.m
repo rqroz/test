@@ -24,7 +24,7 @@
 
 - (CDVPlugin*) initWithWebView:(UIWebView*)theWebView
 {
-    self = (CDVKeychain*)[super initWithWebView:(UIWebView*)theWebView];
+    self = (CDVKeychain1*)[super initWithWebView:(UIWebView*)theWebView];
     if (self) {
 		// initialization here
     }
