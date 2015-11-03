@@ -17,8 +17,8 @@
  under the License.
  */
 
-#import "CDVKeychain.h"
-#import "SFHFKeychainUtils.h"
+#import "CDVKeychain1.h"
+#import "SFHFKeychainUtils1.h"
 
 @implementation CDVKeychain1
 
@@ -44,7 +44,7 @@
             NSString* serviceName = [arguments objectAtIndex:1];
             NSError* error = nil;
             
-            NSString* value = [SFHFKeychainUtils getPasswordForUsername:key andServiceName:serviceName error:&error];
+            NSString* value = [SFHFKeychainUtils1 getPasswordForUsername:key andServiceName:serviceName error:&error];
             if (error == nil && value != nil) {
                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:value];
             } else {
@@ -75,7 +75,7 @@
             NSString* value = [arguments objectAtIndex:2];
             NSError* error = nil;
             
-            BOOL stored = [SFHFKeychainUtils storeUsername:key andPassword:value forServiceName:serviceName updateExisting:YES error:&error];
+            BOOL stored = [SFHFKeychainUtils1 storeUsername:key andPassword:value forServiceName:serviceName updateExisting:YES error:&error];
             if (stored && error == nil) {
                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
             } else {
@@ -105,7 +105,7 @@
             NSString* serviceName = [arguments objectAtIndex:1];
             NSError* error = nil;
             
-            BOOL deleted = [SFHFKeychainUtils deleteItemForUsername:key andServiceName:serviceName error:&error];
+            BOOL deleted = [SFHFKeychainUtils1 deleteItemForUsername:key andServiceName:serviceName error:&error];
             if (deleted && error == nil) {
                 pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
             } else {
