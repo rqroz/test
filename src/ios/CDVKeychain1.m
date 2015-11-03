@@ -20,7 +20,7 @@
 #import "CDVKeychain.h"
 #import "SFHFKeychainUtils.h"
 
-@implementation CDVKeychain
+@implementation CDVKeychain1
 
 - (CDVPlugin*) initWithWebView:(UIWebView*)theWebView
 {
