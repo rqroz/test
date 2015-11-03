@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="com.dcousens.cordova.plugin.keychainutil"
+    id="com.sp.cordova.plugin.keychainutil"
     version="1.0.0">
 
     <name>KeyChain Plugin for Cordova iOS</name>
@@ -12,9 +12,9 @@
         <engine name="cordova" version=">=2.2.0" />
     </engines>
 
-    <asset src="www/keychain.js" target="plugins/keychain.js" />
+    <asset src="www/keychain1.js" target="plugins/keychain1.js" />
 
-	<js-module src="www/keychain.js" name="OldKeychain">
+	<js-module src="www/keychain1.js" name="OldKeychain">
     	<clobbers target="window.OldKeychain" />
 	</js-module>
 
