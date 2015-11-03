@@ -55,7 +55,7 @@
 
 static NSString *SFHFKeychainUtilsErrorDomain = @"SFHFKeychainUtilsErrorDomain";
 
-@implementation SFHFKeychainUtils
+@implementation SFHFKeychainUtils1
 
 
 + (NSString *) getPasswordForUsername: (NSString *) username andServiceName: (NSString *) serviceName error: (NSError **) error {
