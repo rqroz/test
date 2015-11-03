@@ -1,0 +1,37 @@
+{
+  "name": "cordova-plugin-ios-keychain2",
+  "version": "1.1.0",
+  "description": "DO NOT USE THIS",
+  "cordova": {
+    "id": "cordova-plugin-ios-keychain2",
+    "platforms": [
+      "android",
+      "ios",
+      "wp7",
+      "wp8",
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcousens/cordova-plugin-ios-keychain2"
+  },
+  "keywords": [
+    "cordova",
+    "statusbar",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Apache Software Foundation",
+  "license": "Apache 2.0"
+}
