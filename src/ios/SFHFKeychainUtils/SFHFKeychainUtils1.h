@@ -30,7 +30,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SFHFKeychainUtils : NSObject {
+@interface SFHFKeychainUtils1 : NSObject {
   
 }
 
