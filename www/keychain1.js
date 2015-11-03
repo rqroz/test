@@ -22,7 +22,7 @@
 var exec = require('cordova/exec');
 
 var OldKeychain = function() {
-	this.serviceName = "Keychain";
+	this.serviceName = "OldKeychain";
 };
 
 Keychain.prototype.getOldForKey = function(successCallback, failureCallback, key, servicename)
