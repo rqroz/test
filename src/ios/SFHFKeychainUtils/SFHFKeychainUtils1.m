@@ -50,7 +50,7 @@
  -26275 - Unable to decode the provided data.
  */
 
-#import "SFHFKeychainUtils.h"
+#import "SFHFKeychainUtils1.h"
 #import <Security/Security.h>
 
 static NSString *SFHFKeychainUtilsErrorDomain = @"SFHFKeychainUtilsErrorDomain";
@@ -166,7 +166,7 @@ static NSString *SFHFKeychainUtilsErrorDomain = @"SFHFKeychainUtilsErrorDomain";
     
     // See if we already have a password entered for these credentials.
     NSError *getError = nil;
-    NSString *existingPassword = [SFHFKeychainUtils getPasswordForUsername: username andServiceName: serviceName error:&getError];
+    NSString *existingPassword = [SFHFKeychainUtils1 getPasswordForUsername: username andServiceName: serviceName error:&getError];
     
     if ([getError code] == -1999)  {
         // There is an existing entry without a password properly stored (possibly as a result of the previous incorrect version of this code.
